@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'ru' }}">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description"
+         content="NewLife Projects - страница проектов пользователя, личный блог и место для заметок и эксперементов. Есть пара интересных страниц">
+      <meta name="author" content="NewLife">
+      <meta content="Kotaz`s projects" property="og:site_name">
+      <meta content="Личный сайт-блог и проект-лист пользователя Kotaz" property="og:title">
+      <meta content="Шаг за шагом я все дальше захожу. Возможно, тебе будет интересно посмотреть различные мои записи, заметки, новости или ознакомиться с текущими проектами" property="og:description">
+      <meta content='https://cdn.discordapp.com/avatars/820647850571595786/4313bc007a7a018d7fab856982c1e93b.png?size=512' property='og:image'>
+      <meta name="theme-color" content="#2C92DB>
+         <link rel="icon" href="favicon.ico">
+      <title>Главная</title>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+         crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+         crossorigin="anonymous"></script>
+      <!-- FontAwesome -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+      <!-- FontAwesome Additions -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+      <!-- BrandColors -->
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/brand-colors/2.1.1/css/brand-colors.latest.min.css">
+      <!-- HightLight -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+      <link rel="stylesheet" href="{{site.url}}/assets/css/dracula.css">
+      <link rel="stylesheet" href="{{site.url}}/assets/css/grad.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/languages/go.min.js"></script>
+      <script src="{{site.url}}/assets/js/top-button.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      <style>
+         h1, h2, h3 {
+         padding-top:70px;
+         margin-top:-70px;
+         }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+         <a class="navbar-brand" href="#">
+         <i class="fas fa-adjust"></i>
+         <span class="navbar-brand">{{ site.title }}</span>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Главная</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <main class="container row py-5 px-3">
+         <section class="col-sm-3">
+            <div class="card card-body">
+               <h2 class="card-title text-center">NewLife</h2>
+               <img class="img-fluid rounded-circle" src="https://cdn.discordapp.com/avatars/820647850571595786/4313bc007a7a018d7fab856982c1e93b.png?size=512" alt="avatar">
+               <a href='https://vk.com/kotazz' class="badge badge-light bc-vkontakte"><i class="fab fa-vk"></i> ВКонтакте</a>
+               <a href='https://discord.gg/EDhRWE3GfY' class="badge badge-light bc-discord"><i
+                  class="fab fa-discord"></i> Discord</a>
+            </div>
+         </section>
+         <section class="col-sm-9">
+            <h1>Добро пожаловать</h1>
+         </section>
+      </main>
+      <footer>
+         <nav class="navbar navbar-dark bg-dark sticky-bottom">
+            <span class="navbar-text center">
+            NewLifeSite 2021
+            </span>
+         </nav>
+      </footer>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+      <script>
+         // Your web app's Firebase configuration
+         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+         var firebaseConfig = {
+           apiKey: "AIzaSyB6GLjLPeKBkdDkCQCohvkHrptlLYVSDc4",
+           authDomain: "newlifesite-dfe9e.firebaseapp.com",
+           projectId: "newlifesite-dfe9e",
+           storageBucket: "newlifesite-dfe9e.appspot.com",
+           messagingSenderId: "470899893969",
+           appId: "1:470899893969:web:d513b2251747b3e8bbc7f0",
+           measurementId: "G-LK3THSVV6R"
+         };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+         firebase.analytics();
+      </script>
+   </body>
+</html>
